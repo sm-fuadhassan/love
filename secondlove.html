@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+.mySlides {display:none;}
+</style>
+
+  </head>
+  <body>
+
+    <h2 style="text-align:center; color:#ffffff">দ্বিতীয়</h2>
+
+      <img class="mySlides" src="second1.jpg" style="width:30%;height:30%">
+      <img class="mySlides" src="second2.jpg" style="width:30%;height:30%">
+      <img class="mySlides" src="second3.jpg" style="width:30%;height:30%">
+
+      <h3 style="text-align:center; color:#ffffff">আমরা লালবাগ ঘুরতে যাবো। আফতাম নগর যেয়ে দেখি তুমি শাড়ি পড়ছ। ভীষণ অদ্ভুত মায়াময় লাগছিলো তোমাকে! রওনা দিলাম।</h3>
+      <h3 style="text-align:center; color:#ffffff">পৌছে দেখি মানুষের ভীড়ে দাড়ানোর জায়গা নেই। উপায় না পেয়ে গিয়ে বসলাম পাশের রেস্টুরেন্টে এর ছাদে</h3>
+      <h3 style="text-align:center; color:#ffffff">সেদিন কত ছবি তুলেছিলাম কে জানে! তারপর সেখান থেকে রামপুরা ফিরে ইচ্ছে করলো টিএসসি যেতে। টিএসসি তে বসে আচার </h3>
+      <h3 style="text-align:center; color:#ffffff">খাচ্ছিলাম মনে আছে? তোমাকে না দিয়ে। তুমি আমার খাওয়া দেখছিলে। খাওয়া শেষে বললে,আমাকে একবার খেতেও বললা না!</h3>
+  <br>
+
+      <h3 style="text-align:center; color:#ffffff">তৃতীয় ... </h3>
+      <a href="thirdlove.html"><img src="next.gif" alt="" style="width:10%;height:10%"></a>
+
+
+    <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>
+
+  </body>
+</html>
